@@ -1,8 +1,14 @@
 ## Prerequisits
 
-  * You must have a GitHub account, sign up at https://www.github.com
-  * You must have Sparkleshare installed on your system
+  * A GitHub account (sign up at https://www.github.com)
+  * Sparkleshare installed on your system
   * Requires Git >= v1.7.12
+  
+## Installing Git
+
+#### Windows
+
+  1. Download and install from http://www.git-scm.com
   
 ## Installing Sparkleshare
 
