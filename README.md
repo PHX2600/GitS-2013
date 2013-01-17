@@ -3,55 +3,49 @@
   * A GitHub account (sign up at https://www.github.com)
   * Sparkleshare installed on your system
   * Requires Git >= v1.7.12
-  
-## Instal Git and Set Up GitHub Account
 
-#### Windows
 
-**Install Git**
+## Install Git on Windows
 
   1. Download and install from http://www.git-scm.com
 
-**Generate SSH Key**
+## Generate SSH Key
 
   1. Launch "Git Bash"
   2. Run the following:
-    ssh-keygen.exe -r rsa -C "your_email@example.com"
+  
+      $ ssh-keygen.exe -r rsa -C "your_email@example.com"
+
+
+## Install Git on Ubuntu
+
+#### Install Git from PPA
+
+    $ sudo apt-add-repository ppa:git-core/ppa
+    $ sudo apt-get update && sudo apt-get install git
     
-**Add SSH Key to Github**
+#### Generate SSH Key
+
+  1. From a terminal, run the following:
+  
+      $ ssh-keygen -r rsa -C "your_email@example.com"
+
+
+    
+## Add Your SSH Key to GitHub
 
   1. Copy your SSH key to your clipboard but running
+  
     $ clip < ~/.ssh/id_rsa.pub
+    
   2. Go to your [Account Settings](https://github.com/settings)
   3. Click [SSH Keys](https://github.com/settings) in the left sidebar
   4. Click "Add SSH key"
   5. Paste your key into the "Key" field
   6. Click "Add key"
   7. Confirm the action by entering your GitHub password
-  
-#### Ubuntu
 
-**Install Git from PPA**
-
-    sudo apt-add-repository ppa:git-core/ppa
-    sudo apt-get update && sudo apt-get install git
-
-**Generate SSH Key**
-
-    ssh-keygen -t rsa -C "your_email@example.com"
-  
-  
-**Add SSH Key to Github**
-
-  1. From github.com, navigate to your [SSH Keys](https://github.com/settings/ssh)
-  page and select "Add SSH Key"
-  2. From your computer 
-  
-
-  
-  
-  
-## Installing Sparkleshare
+## Install Sparkleshare
 
 #### Windows
 
@@ -65,7 +59,8 @@ rather out of date and we recommend installing from source.
   1. Download the Sparkleshare source code from http://www.sparkleshare.org
   2. Follow instructions [here](https://github.com/hbons/SparkleShare/blob/master/SparkleShare/Linux/README.md)
 
-## Adding a Project to Spakleshare
+
+## Add a Project to Spakleshare
 
   1. From the Sprakleshare context menu, select "Add hosted project..."
   2. Select GitHub as the project host
