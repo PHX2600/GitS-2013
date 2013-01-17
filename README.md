@@ -29,7 +29,7 @@ Install Git:
     
 #### Generate SSH Key
 
-  1. From a terminal, run the following:
+From a terminal, run the following:
 
     $ ssh-keygen -r rsa -C "your_email@example.com"
 
