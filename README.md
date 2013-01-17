@@ -19,12 +19,9 @@
 
 ## Install Git on Ubuntu
 
-To get the latest version of Git, add the stalbe PPA:
+To get the latest version of Git, add the stalbe PPA and install Git:
 
     $ sudo apt-add-repository ppa:git-core/ppa
-
-Install Git:
-
     $ sudo apt-get update && sudo apt-get install git
     
 #### Generate SSH Key
