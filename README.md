@@ -4,26 +4,49 @@
   * Sparkleshare installed on your system
   * Requires Git >= v1.7.12
   
-## Installing Git
+## Instal Git and Set Up GitHub Account
 
 #### Windows
 
+**Install Git**
+
   1. Download and install from http://www.git-scm.com
-  2. Launch Git Bash
+
+**Generate SSH Key
+
+  1. Launch "Git Bash"
+  2. Run the following:
+    ssh-keygen.exe -r rsa -C "your_email@example.com"
+    
+**Add SSH Key to Github**
+
+  1. Copy your SSH key to your clipboard but running
+    $ clip < ~/.ssh/id_rsa.pub
+  2. Go to your [Account Settings](https://github.com/settings)
+  3. Click [SSH Keys](https://github.com/settings) in the left sidebar
+  4. Click "Add SSH key"
+  5. Paste your key into the "Key" field
+  6. Click "Add key"
+  7. Confirm the action by entering your GitHub password
   
 #### Ubuntu
 
 **Install Git from PPA**
 
-  1. sudo apt-add-repository ppa:git-core/ppa
-  2. sudo apt-get update && sudo apt-get install git
+    sudo apt-add-repository ppa:git-core/ppa
+    sudo apt-get update && sudo apt-get install git
 
 **Generate SSH Key**
-  
-  
+
+    ssh-keygen -t rsa -C "your_email@example.com"
   
   
 **Add SSH Key to Github**
+
+  1. From github.com, navigate to your [SSH Keys](https://github.com/settings/ssh)
+  page and select "Add SSH Key"
+  2. From your computer 
+  
 
   
   
