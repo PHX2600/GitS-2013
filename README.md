@@ -12,7 +12,7 @@
 
   1. Download and install from http://www.git-scm.com
 
-**Generate SSH Key
+**Generate SSH Key**
 
   1. Launch "Git Bash"
   2. Run the following:
