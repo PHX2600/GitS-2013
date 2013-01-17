@@ -2,6 +2,7 @@
 
   * You must have a GitHub account, sign up at https://www.github.com
   * You must have Sparkleshare installed on your system
+  * Requires Git >= v1.7.12
   
 ## Installing Sparkleshare
 
