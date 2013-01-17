@@ -9,6 +9,24 @@
 #### Windows
 
   1. Download and install from http://www.git-scm.com
+  2. Launch Git Bash
+  
+#### Ubuntu
+
+**Install Git from PPA**
+
+  1. sudo apt-add-repository ppa:git-core/ppa
+  2. sudo apt-get update && sudo apt-get install git
+
+**Generate SSH Key**
+  
+  
+  
+  
+**Add SSH Key to Github**
+
+  
+  
   
 ## Installing Sparkleshare
 
