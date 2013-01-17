@@ -24,14 +24,11 @@ To get the latest version of Git, add the stalbe PPA and install Git:
     $ sudo apt-add-repository ppa:git-core/ppa
     $ sudo apt-get update && sudo apt-get install git
     
-#### Generate SSH Key
-
-From a terminal, run the following:
+To generate an SSH key, run the following from a terminal:
 
     $ ssh-keygen -r rsa -C "your_email@example.com"
 
 
-    
 ## Add Your SSH Key to GitHub
 
   1. Copy your SSH key to your clipboard but running
