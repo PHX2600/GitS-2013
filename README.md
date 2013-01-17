@@ -1,6 +1,3 @@
-Welcome to the 2013 GhostInTheShellcode CTF Sparkleshare
-========================================================
-
 ## Prerequisits
 
   * You must have a GitHub account, sign up at https://www.github.com
