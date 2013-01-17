@@ -19,16 +19,19 @@
 
 ## Install Git on Ubuntu
 
-#### Install Git from PPA
+To get the latest version of Git, add the stalbe PPA:
 
     $ sudo apt-add-repository ppa:git-core/ppa
+
+Install Git:
+
     $ sudo apt-get update && sudo apt-get install git
     
 #### Generate SSH Key
 
   1. From a terminal, run the following:
-  
-      $ ssh-keygen -r rsa -C "your_email@example.com"
+
+    $ ssh-keygen -r rsa -C "your_email@example.com"
 
 
     
