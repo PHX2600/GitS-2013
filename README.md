@@ -2,7 +2,7 @@
 
   * A [GitHub](https://www.github.com) account
   * [sparkleshare](http://sparkleshare.org/) project syncing application
-  * [Git](http://www.git-scm.com) >= v1.7.12
+  * [git](http://www.git-scm.com) >= v1.7.12
 
 
 ## Install Git on Windows
