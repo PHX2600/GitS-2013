@@ -28,7 +28,7 @@ To generate an SSH key, run the following from a terminal:
 
 ## Add Your SSH Key to GitHub
 
-  1. Copy your SSH key to your clipboard but running
+  1. Copy your SSH key to your clipboard by running:
 
     $ clip < ~/.ssh/id_rsa.pub
 
