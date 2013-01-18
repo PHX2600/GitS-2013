@@ -2,7 +2,7 @@
 
   * A GitHub account (sign up at https://www.github.com)
   * sparkleshare (http://sparkleshare.org/)
-  * Githttp://www.git-scm.com >= v1.7.12
+  * Git >= v1.7.12 (http://www.git-scm.com)
 
 
 ## Install Git on Windows
