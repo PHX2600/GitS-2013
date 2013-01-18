@@ -39,19 +39,19 @@ To generate an SSH key, run the following from a terminal:
   6. Click "Add key"
   7. Confirm the action by entering your GitHub password
 
-## Install Sparkleshare
 
-#### Windows
+## Install Sparkleshare on Windows
 
-  1. Download and install the .msi from http://www.sparkleshare.org
+Download and install the .msi from http://www.sparkleshare.org
 
-#### Linux
 
-**NOTE:** Sparkleshare is available in the Ubuntu repositories, however this version is
-rather out of date and we recommend installing from source.
+## Install Sparkleshare on Ubuntu
+
+**NOTE:** Sparkleshare is available in the Ubuntu repositories, however this
+version is rather out of date and it's recommend that you install from source.
 
   1. Download the Sparkleshare source code from http://www.sparkleshare.org
-  2. Follow instructions [here](https://github.com/hbons/SparkleShare/blob/master/SparkleShare/Linux/README.md)
+  2. Follow [these instructions](https://github.com/hbons/SparkleShare/blob/master/SparkleShare/Linux/README.md)
 
 
 ## Add a Project to Spakleshare
