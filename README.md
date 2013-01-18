@@ -1,8 +1,8 @@
 ## Prerequisits
 
-  * A [GitHub](https://www.github.com) account
-  * [sparkleshare](http://sparkleshare.org/) project syncing application
-  * [git](http://www.git-scm.com) >= v1.7.12
+  * A GitHub account (sign up at https://www.github.com)
+  * sparkleshare (http://sparkleshare.org/)
+  * Githttp://www.git-scm.com >= v1.7.12
 
 
 ## Install Git on Windows
