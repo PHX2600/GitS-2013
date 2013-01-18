@@ -1,6 +1,6 @@
 ## Prerequisits
 
-  * A GitHub account (sign up at https://www.github.com)
+  * A [GitHub](https://www.github.com) account
   * Sparkleshare installed on your system
   * Requires Git >= v1.7.12
 
