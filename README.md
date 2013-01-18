@@ -9,11 +9,8 @@
 
   1. Download and install from http://www.git-scm.com
 
-#### Generate SSH Key
+To generate an SSH key, open "Git Bash" and run the following:
 
-  1. Launch "Git Bash"
-  2. Run the following:
-  
       $ ssh-keygen.exe -r rsa -C "your_email@example.com"
 
 
