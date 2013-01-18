@@ -28,17 +28,16 @@ To generate an SSH key, run the following from a terminal:
 
 ## Add Your SSH Key to GitHub
 
-  1. Copy your SSH key to your clipboard by running:
+Copy your SSH key to your clipboard by running:
 
     $ clip < ~/.ssh/id_rsa.pub
 
-
-  2. Go to your [Account Settings](https://github.com/settings)
-  3. Click [SSH Keys](https://github.com/settings) in the left sidebar
-  4. Click "Add SSH key"
-  5. Paste your key into the "Key" field
-  6. Click "Add key"
-  7. Confirm the action by entering your GitHub password
+  1. Go to your [Account Settings](https://github.com/settings)
+  2. Click [SSH Keys](https://github.com/settings) in the left sidebar
+  3. Click "Add SSH key"
+  4. Paste your key into the "Key" field
+  5. Click "Add key"
+  6. Confirm the action by entering your GitHub password
 
 
 ## Install Sparkleshare on Windows
