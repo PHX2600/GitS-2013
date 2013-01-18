@@ -58,5 +58,5 @@ version is rather out of date and it's recommend that you install from source.
 
   1. From the Sprakleshare context menu, select "Add hosted project..."
   2. Select GitHub as the project host
-  3. Use "PHX2600/<project_name>" for the remote path
+  3. Use "PHX2600/project_name" for the remote path
   4. Click the Add button
