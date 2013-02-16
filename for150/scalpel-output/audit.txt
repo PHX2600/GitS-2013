@@ -1,0 +1,46 @@
+
+Scalpel version 1.60 audit file
+Started at Fri Feb 15 19:03:17 2013
+Command line:
+scalpel imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png 
+
+Output directory: /home/chris/SparkleShare/GitS-2013/for150/scalpel-output
+Configuration file: /etc/scalpel/scalpel.conf
+
+Opening target "H="
+
+The following files were carved:
+File		  Start			Chop		Length		Extracted From
+00000029.rpm       977172		YES           21856		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000028.rpm       958408		YES           40620		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000027.rpm       957315		YES           41713		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000026.rpm       853837		YES          145191		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000025.rpm       844011		YES          155017		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000024.rpm       836220		YES          162808		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000023.pgp       980304		YES           18724		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000022.pgp       970319		YES           28709		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000021.pgp       966909		YES           32119		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000020.pgp       810641		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000019.pgp       730531		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000018.pgp       707824		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000017.pgp       678287		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000016.pgp       619841		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000015.pgp       854101		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000014.pgp       782348		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000013.pgp       769161		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000012.pgp       748278		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000011.pgp       672258		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000010.pgp       628272		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000009.pgp       903895		YES           95133		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000008.pgp       860532		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000007.pgp       779821		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000006.pgp       632628		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000005.pgp       765041		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000004.pgp       662680		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000003.pgp       637114		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000002.pgp       636138		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000001.pgp       617536		YES          100000		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+00000000.png            1		NO           498880		imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+
+
+Completed at Fri Feb 15 19:03:17 2013
