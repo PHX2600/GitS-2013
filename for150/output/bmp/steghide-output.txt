@@ -1,3 +1,0 @@
-"00000189-zyphlar.bmp":
-  format: Windows 3.x bitmap
-  capacity: 24.9 KB
