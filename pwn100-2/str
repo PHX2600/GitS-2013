@@ -1,0 +1,36 @@
+/lib64/ld-linux-x86-64.so.2
+T3d9
+__gmon_start__
+libc.so.6
+fflush
+exit
+puts
+strftime
+read
+stdout
+stderr
+localtime
+fprintf
+strcmp
+__libc_start_main
+GLIBC_2.2.5
+%z	 
+%r	 
+%j	 
+%b	 
+%Z	 
+%R	 
+%J	 
+fff.
+l$ L
+t$(L
+|$0H
+Welcome to Shifty's Time Formatting Service!
+What is your name?
+Welcome, %s!
+Please provide a time format:
+Your formatted time is:
+Thank you! Come again!
+fail!
+NowIsTheWinterOfOurDiscountTent
+;*3$"
