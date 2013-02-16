@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Fri Feb 15 20:07:27 2013
+Invocation: foremost 00000189.bmp 
+Output directory: /home/chris/SparkleShare/GitS-2013/for150/output/bmp/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: 00000189.bmp
+Start: Fri Feb 15 20:07:28 2013
+Length: 600 KB (614454 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.bmp 	     600 KB 	          0 	  (319 x 640)
+Finish: Fri Feb 15 20:07:28 2013
+
+1 FILES EXTRACTED
+	
+bmp:= 1
+------------------------------------------------------------------
+
+Foremost finished at Fri Feb 15 20:07:28 2013
