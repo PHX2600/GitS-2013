@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Fri Feb 15 19:22:35 2013
+Invocation: foremost imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png 
+Output directory: /home/chris/SparkleShare/GitS-2013/for150/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: imgception-ce4fae066ffabd57aeb4a4d29faa1de1cf4c988f.png
+Start: Fri Feb 15 19:22:35 2013
+Length: 975 KB (999027 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000189.bmp 	     600 KB 	      97147 	  (319 x 640)
+1:	00000000.png 	     975 KB 	          0 	  (600 x 450)
+Finish: Fri Feb 15 19:22:35 2013
+
+2 FILES EXTRACTED
+	
+bmp:= 1
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Fri Feb 15 19:22:35 2013
