@@ -56,7 +56,7 @@ def decrypt(c,p,q):
 p=7
 q=11
 n=p*q
-TEST=True
+TEST=False
 if TEST:
     m=[]
     for x in xrange(200):
