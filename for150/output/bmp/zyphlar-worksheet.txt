@@ -1,0 +1,67 @@
+width = 319d *3 = 957d = 0x3bd
+offset = 0x36
+eol1 = 0x3f3  8dbadf
+eol2 = 0x7b0  91bfe1
+
+0x7e54 - 0x7e66
+D3 33 D3 0B  00 00 7E 58  67 69 54 73  65 64 41 00  A5 AA AB
+D3 33 D3 0B  00 00 7E 58  67 69 54 73  65 64 41 00  A5 AA AB A7  AC AD FF FF  FF
+
+SoF = 0x36 = 54d
+EOL a9a7b0 - 0x7fb0-0x7fb2
+HDR aba7ac - 0x7e66-0x7e68
+
+7fb0-7e66=0x14A=330
+
+ffffd3 0000ff 67587e 735469 416465 ffff00 aca7ff
+d3ffff ff0000 7e5867 695473 656441 00ffff ffa7ac
+D333D3 0B0000 7E5867 695473 656441 00A5AA ABA7AC
+
+  33D3 0B                            A5AA AB
+
+
+  7e58 6769 5473 = ~XgiTs
+
+edA + heD
+uns + heG
+ed 
+lin
+lac
+Man + ese
+ssT
+kFl
+rtA + Fol
+cro
+InB
+
+
+---------
+
+lac
+Man
+ese
+rtA
+
+InBedAcrossTheDed 
+heG
+rtA
+uns
+
+Fol
+linkFl
+
+----------
+
+Man ssTlinlac croedInB uns kFl rtAedA
+
+---------
+
+
+heD
+uns
+ed 
+ese
+rtA
+Fol
+lin
+ManInBlackFledAcrossTheG
