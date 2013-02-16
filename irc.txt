@@ -1,0 +1,3 @@
+irc:
+#phx2600.ctf
+http://webchat.freenode.net/
