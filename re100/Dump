@@ -597,15 +597,16 @@ int size = fread(buffer, 1, len, file);
  80486ba:	83 c0 01             	add    eax,0x1
  80486bd:	39 d0                	cmp    eax,edx
  80486bf:	75 ef                	jne    80486b0 <calloc@plt+0xd0>
-//Checks buffer for NULL
+//Checks buffer for SIGNED
 
-//func2(buffer, size, &out)
  80486c1:	8d 44 24 2c          	lea    eax,[esp+0x2c]
  80486c5:	89 44 24 08          	mov    DWORD PTR [esp+0x8],eax
  80486c9:	8d 44 24 28          	lea    eax,[esp+0x28]
  80486cd:	89 44 24 04          	mov    DWORD PTR [esp+0x4],eax
  80486d1:	89 1c 24             	mov    DWORD PTR [esp],ebx
  80486d4:	e8 37 02 00 00       	call   8048910 <error+0x10>
+//char* out = func2(buffer, size, &out)
+//Return value gets written back to file below
 
  80486d9:	85 c0                	test   eax,eax
  80486db:	89 44 24 1c          	mov    DWORD PTR [esp+0x1c],eax
@@ -618,13 +619,16 @@ int size = fread(buffer, 1, len, file);
  80486f5:	83 c0 05             	add    eax,0x5
  80486f8:	89 04 24             	mov    DWORD PTR [esp],eax
  80486fb:	e8 e0 fe ff ff       	call   80485e0 <calloc@plt>
+
  8048700:	89 3c 24             	mov    DWORD PTR [esp],edi
  8048703:	89 c6                	mov    esi,eax
  8048705:	e8 76 fe ff ff       	call   8048580 <strlen@plt>
+
  804870a:	89 7c 24 04          	mov    DWORD PTR [esp+0x4],edi
  804870e:	89 34 24             	mov    DWORD PTR [esp],esi
  8048711:	89 44 24 08          	mov    DWORD PTR [esp+0x8],eax
  8048715:	e8 a6 fe ff ff       	call   80485c0 <strncpy@plt>
+
  804871a:	89 f1                	mov    ecx,esi
  804871c:	8b 11                	mov    edx,DWORD PTR [ecx]
  804871e:	83 c1 04             	add    ecx,0x4
@@ -643,10 +647,14 @@ int size = fread(buffer, 1, len, file);
  8048747:	83 d9 03             	sbb    ecx,0x3
  804874a:	c7 01 2e 72 74 66    	mov    DWORD PTR [ecx],0x6674722e
  8048750:	66 c7 41 04 6d 00    	mov    WORD PTR [ecx+0x4],0x6d
+
  8048756:	89 34 24             	mov    DWORD PTR [esp],esi
- 8048759:	c7 44 24 04 87 8c 04 	mov    DWORD PTR [esp+0x4],0x8048c87
+ 8048759:	c7 44 24 04 87 8c 04 	mov    DWORD PTR [esp+0x4],0x8048c87 //"rb"
  8048760:	08 
  8048761:	e8 4a fe ff ff       	call   80485b0 <fopen@plt>
+//fopen("", "rb")
+//eax == FILE*
+
  8048766:	c7 44 24 04 01 00 00 	mov    DWORD PTR [esp+0x4],0x1
  804876d:	00 
  804876e:	89 c6                	mov    esi,eax
@@ -656,13 +664,18 @@ int size = fread(buffer, 1, len, file);
  804877c:	8b 44 24 1c          	mov    eax,DWORD PTR [esp+0x1c]
  8048780:	89 04 24             	mov    DWORD PTR [esp],eax
  8048783:	e8 98 fd ff ff       	call   8048520 <fwrite@plt>
+//fwrite(out, 1, len, file)
+
  8048788:	89 34 24             	mov    DWORD PTR [esp],esi
  804878b:	e8 70 fd ff ff       	call   8048500 <fclose@plt>
+
  8048790:	89 1c 24             	mov    DWORD PTR [esp],ebx
  8048793:	e8 58 fd ff ff       	call   80484f0 <free@plt>
+
  8048798:	8b 44 24 1c          	mov    eax,DWORD PTR [esp+0x1c]
  804879c:	89 04 24             	mov    DWORD PTR [esp],eax
  804879f:	e8 4c fd ff ff       	call   80484f0 <free@plt>
+
  80487a4:	8d 65 f4             	lea    esp,[ebp-0xc]
  80487a7:	31 c0                	xor    eax,eax
  80487a9:	5b                   	pop    ebx
@@ -792,21 +805,30 @@ int size = fread(buffer, 1, len, file);
  804890f:	90                   	nop
 
 
-//func2(buffer, size, &out)
+//char* func2(char *buffer, int size, char *outParam)
+//[esp+0x48] = outParam
+//[esp+0x44] = size
+//[esp+0x40] = buffer
+
  8048910:	55                   	push   ebp
  8048911:	57                   	push   edi
  8048912:	56                   	push   esi
  8048913:	53                   	push   ebx
  8048914:	83 ec 2c             	sub    esp,0x2c
+//prologue
+
  8048917:	8b 7c 24 48          	mov    edi,DWORD PTR [esp+0x48]
+//edi == buffer
+
  804891b:	c7 44 24 04 01 00 00 	mov    DWORD PTR [esp+0x4],0x1
  8048922:	00 
  8048923:	c7 04 24 00 02 00 00 	mov    DWORD PTR [esp],0x200
  804892a:	e8 b1 fc ff ff       	call   80485e0 <calloc@plt>
+//char *retbuffer = calloc(0x200, 1)
 
  804892f:	85 c0                	test   eax,eax
  8048931:	89 c6                	mov    esi,eax
-//esi,eax == buffer2 (size 0x200)
+//esi,eax == retbuffer (size 0x200)
 
  8048933:	0f 84 e1 00 00 00    	je     8048a1a <error+0x11a>
 
@@ -815,28 +837,38 @@ int size = fread(buffer, 1, len, file);
  8048940:	c6 40 01 54          	mov    BYTE PTR [eax+0x1],0x54
  8048944:	c6 40 02 46          	mov    BYTE PTR [eax+0x2],0x46
  8048948:	c6 40 03 4d          	mov    BYTE PTR [eax+0x3],0x4d
-//buffer2[] == 0x5254464d "RTFM"
+//retbuffer[] == 0x5254464d "RTFM"
 
  804894c:	8b 2f                	mov    ebp,DWORD PTR [edi]
- 804894e:	8b 44 24 40          	mov    eax,DWORD PTR [esp+0x40]
+ 804894e:	8b 44 24 40          	mov    eax,DWORD PTR [buffer]
  8048952:	83 c5 04             	add    ebp,0x4
  8048955:	89 2f                	mov    DWORD PTR [edi],ebp
+//Moves 0x4 into outParam
+//eax == *"RTMF"
+
  8048957:	03 02                	add    eax,DWORD PTR [edx]
  8048959:	31 d2                	xor    edx,edx
- 804895b:	39 44 24 40          	cmp    DWORD PTR [esp+0x40],eax
+ 804895b:	39 44 24 40          	cmp    DWORD PTR [buffer],eax
+//eax == end of buffer
  804895f:	0f 83 a3 00 00 00    	jae    8048a08 <error+0x108>
 
- 8048965:	8b 5c 24 40          	mov    ebx,DWORD PTR [esp+0x40]
+ 8048965:	8b 5c 24 40          	mov    ebx,DWORD PTR [buffer]
+//ebx == buffer
  8048969:	31 d2                	xor    edx,edx
  804896b:	89 5c 24 14          	mov    DWORD PTR [esp+0x14],ebx
  804896f:	bb 00 02 00 00       	mov    ebx,0x200
  8048974:	89 5c 24 1c          	mov    DWORD PTR [esp+0x1c],ebx
+//[esp+0x14]  == buffer
+//[esp+0x1c] == 0x200
  8048978:	8b 5c 24 14          	mov    ebx,DWORD PTR [esp+0x14]
+//ebx == buffer
  804897c:	0f be 0b             	movsx  ecx,BYTE PTR [ebx]
  804897f:	0f b6 04 8d a2 8c 04 	movzx  eax,BYTE PTR [ecx*4+0x8048ca2]
  8048986:	08 
  8048987:	0f b7 0c 8d a0 8c 04 	movzx  ecx,WORD PTR [ecx*4+0x8048ca0]
  804898e:	08 
+//Lookup eax, ecx in table
+
  804898f:	89 c3                	mov    ebx,eax
  8048991:	80 c3 02             	add    bl,0x2
  8048994:	88 5c 24 1b          	mov    BYTE PTR [esp+0x1b],bl
@@ -872,7 +904,7 @@ int size = fread(buffer, 1, len, file);
  80489e7:	77 3f                	ja     8048a28 <error+0x128>
  80489e9:	8b 5c 24 44          	mov    ebx,DWORD PTR [esp+0x44]
  80489ed:	83 44 24 14 01       	add    DWORD PTR [esp+0x14],0x1
- 80489f2:	8b 44 24 40          	mov    eax,DWORD PTR [esp+0x40]
+ 80489f2:	8b 44 24 40          	mov    eax,DWORD PTR [outParam]
  80489f6:	03 03                	add    eax,DWORD PTR [ebx]
  80489f8:	39 44 24 14          	cmp    DWORD PTR [esp+0x14],eax
  80489fc:	0f 82 76 ff ff ff    	jb     8048978 <error+0x78>
@@ -897,8 +929,8 @@ int size = fread(buffer, 1, len, file);
  8048a22:	5d                   	pop    ebp
  8048a23:	c3                   	ret
 
-    
  8048a24:	8d 74 26 00          	lea    esi,[esi+eiz*1+0x0]
+
  8048a28:	8b 6c 24 1c          	mov    ebp,DWORD PTR [esp+0x1c]
  8048a2c:	88 54 24 10          	mov    BYTE PTR [esp+0x10],dl
  8048a30:	89 34 24             	mov    DWORD PTR [esp],esi
@@ -923,6 +955,7 @@ int size = fread(buffer, 1, len, file);
  8048a70:	89 34 24             	mov    DWORD PTR [esp],esi
  8048a73:	31 f6                	xor    esi,esi
  8048a75:	e8 76 fa ff ff       	call   80484f0 <free@plt>
+//Epilogue
  8048a7a:	83 c4 2c             	add    esp,0x2c
  8048a7d:	89 f0                	mov    eax,esi
  8048a7f:	5b                   	pop    ebx
