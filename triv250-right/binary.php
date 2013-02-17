@@ -79,5 +79,7 @@ bindec('00000000'));
 
 for($i=0;$i<sizeof($data);$i++){
   echo $data[$i];
+  echo ":";
+  echo dechex($data[$i]);
   echo "\n";
 }
