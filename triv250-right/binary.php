@@ -77,4 +77,4 @@ bindec('11011011'),
 bindec('01111100'),
 bindec('00000000'));
 
-echo $data[0];
+var_dump($data);
