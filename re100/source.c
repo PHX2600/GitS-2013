@@ -2,6 +2,15 @@
 #include <stdio.h>
 
 
+char *func2(char *buffer, int size, char *out)
+{
+	char *retbuffer = calloc(0x200, 1);
+	retbuffer[] == 0x5254464d;// "RTFM"
+	
+
+	return retbuffer;
+}
+
 //void?
 int GetLength()
 {
@@ -32,15 +41,18 @@ int main(int argc, char *argv[])
 	if(size == 0)
 		//...
 
-	//Check for NULL bytes
+	//Check for "SIGNED" bytes
 	for(int i = 0; i < size; i++)
 	{
-		if(buffer[i] == '\0')
+		if(buffer[i] "is signed" )
 			exit(0);
 	}
 
-	
+	func2()
 
-	
+	//Funny transforms
+
+
+	fwrite(buffer, size, NUM, file);
 	
 }
