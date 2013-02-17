@@ -77,4 +77,4 @@ bindec('11011011'),
 bindec('01111100'),
 bindec('00000000'));
 
-echo $data;
+echo $data[0];
