@@ -81,5 +81,7 @@ for($i=0;$i<sizeof($data);$i++){
   echo $data[$i];
   echo "\t";
   echo dechex($data[$i]);
+  echo "\t";
+  echo chr($data[$i]);
   echo "\n";
 }
