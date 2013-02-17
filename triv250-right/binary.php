@@ -77,4 +77,7 @@ bindec('11011011'),
 bindec('01111100'),
 bindec('00000000'));
 
-var_dump($data);
+for($i=0;$i<sizeof($data);$i++){
+  echo $data[$i];
+  echo "\n";
+}
